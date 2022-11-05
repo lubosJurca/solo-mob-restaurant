@@ -16,7 +16,7 @@ body {
     background: #F5F5F5;
 }
 
-#app {
+.wrapper {
     position: relative;
     width: 600px;
     height: 1161px;
@@ -63,24 +63,25 @@ header {
 .item {
     width: 508px;
     height: 140px;
+    border-bottom: 1px solid #D2D2D2;
 
 
 
 }
 
-#item-1 {
+#item-0 {
     position: absolute;
     top: 234px;
     left: 46px;
 }
 
-#item-2 {
+#item-1 {
     position: absolute;
     top: 419px;
     left: 46px;
 }
 
-#item-3 {
+#item-2 {
     position: absolute;
     top: 604px;
     left: 46px;
@@ -104,6 +105,10 @@ header {
     position: absolute;
     top: 8px;
     right: 46px;
+}
+
+.add-btn:hover {
+    background: #ecebeb;
 }
 
 
@@ -162,3 +167,6 @@ header {
     left: 101px;
     top: 65px;
 }
+
+
+/* -------- Your order--------- */
