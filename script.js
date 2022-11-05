@@ -2,8 +2,15 @@ import { itemsMenu } from "./data.js"
 
 // ----- Add event listener
 document.addEventListener("click", function (event) {
-    console.log(event.target.dataset.add)
+
+    // ----Catch only when add button is clicked
+    if (event.target.dataset.add) {
+        handleAddBtn(event.target.dataset.add)
+    }
 })
+
+
+
 // ------ Get items from array
 function getFeedHtml() {
     let feedHtml = ""
@@ -22,6 +29,16 @@ function getFeedHtml() {
 
     return feedHtml
 }
+
+
+function handleAddBtn(item) {
+    const targetItem = itemsMenu.filter(function (itemId) {
+        return itemId.id == item
+    })[0]
+
+    console.log(targetItem)
+}
+
 
 
 // ------- Render items 
