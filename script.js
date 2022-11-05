@@ -1,6 +1,9 @@
 import { itemsMenu } from "./data.js"
 
-
+// ----- Add event listener
+document.addEventListener("click", function (event) {
+    console.log(event.target.dataset.add)
+})
 // ------ Get items from array
 function getFeedHtml() {
     let feedHtml = ""
@@ -12,7 +15,7 @@ function getFeedHtml() {
             <img src="${item.picture}" alt= id="${item.name}" class="image">
             <p class="item-description" >${item.ingredients}</p>
             <p class="price">$${item.price}</p>
-            <a href="#" class="add-btn" id="add-btn">+</a>
+            <a href="#" class="add-btn" data-add="${item.id}">+</a>
         </div>
         `
     })
