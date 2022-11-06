@@ -171,3 +171,102 @@ header {
 
 
 /* -------- Your order--------- */
+
+.order {
+
+    position: absolute;
+    top: 789px;
+    left: 46px;
+
+    width: 508px;
+    min-height: 319px;
+}
+
+.receipt-header {
+    text-align: center;
+    font-family: 'Smythe', cursive;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 17px;
+    margin-bottom: 64px;
+
+
+}
+
+ul {
+    list-style-type: none;
+    width: 508px;
+}
+
+.order-item {
+
+
+
+    font-family: 'Smythe', cursive;
+    font-weight: 400;
+    font-size: 28px;
+    margin-bottom: 22px;
+
+
+}
+
+.remove {
+    text-decoration: none;
+    color: #BBBBBB;
+    font-size: 12px;
+    font-weight: 400;
+    font-style: normal;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 13px;
+
+}
+
+
+.order-price {
+
+    position: absolute;
+    right: 0px;
+
+    font-size: 20px;
+
+
+}
+
+.total-price {
+    border-top: 2px solid #393333;
+
+    font-family: 'Smythe', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    color: #0E0E0E;
+    padding-top: 14px;
+}
+
+.total-number {
+    position: absolute;
+    right: 0;
+
+    font-size: 20px;
+}
+
+.submit-order {
+    text-decoration: none;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    font-style: normal;
+    background: #16DB99;
+
+    width: 100%;
+    text-align: center;
+
+
+    padding: 15px;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 3px;
+
+    position: absolute;
+    bottom: 0;
+}

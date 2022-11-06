@@ -6,7 +6,15 @@ document.addEventListener("click", function (event) {
     // ----Catch only when add button is clicked
     if (event.target.dataset.add) {
         handleAddBtn(event.target.dataset.add)
+
+
+
     }
+
+
+
+
+
 })
 
 
@@ -19,7 +27,7 @@ function getFeedHtml() {
         feedHtml += `
         <div id="item-${item.id}" class="item">
             <h4 class="name">${item.name}</h4>
-            <img src="${item.picture}" alt= id="${item.name}" class="image">
+            <img src="${item.picture}" id="${item.name}" class="image">
             <p class="item-description" >${item.ingredients}</p>
             <p class="price">$${item.price}</p>
             <a href="#" class="add-btn" data-add="${item.id}">+</a>
@@ -32,12 +40,19 @@ function getFeedHtml() {
 
 
 function handleAddBtn(item) {
+
+
+
     const targetItem = itemsMenu.filter(function (itemId) {
         return itemId.id == item
     })[0]
 
     console.log(targetItem)
+
 }
+
+
+
 
 
 
