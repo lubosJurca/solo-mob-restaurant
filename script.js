@@ -1,14 +1,20 @@
 import { itemsMenu } from "./data.js"
+const order = document.getElementById("order")
+const modalForm = document.getElementById("modal-pop")
+
+
 
 // ----- Add event listener
 document.addEventListener("click", function (event) {
+
+    order.classList.add("hidden")
 
     // ----Catch only when add button is clicked
     if (event.target.dataset.add) {
         handleAddBtn(event.target.dataset.add)
 
-
-
+    } else if (event.target.id === "submit-order") {
+        modalForm.style.display = "block"
     }
 
 
@@ -43,11 +49,12 @@ function handleAddBtn(item) {
 
 
 
+
     const targetItem = itemsMenu.filter(function (itemId) {
-        return itemId.id == item
+        itemId.id == item
     })[0]
 
-    console.log(targetItem)
+    return targetItem
 
 }
 

@@ -29,15 +29,28 @@
 
         </section>
 
-        <section class="order">
+        <section class="order" id="order">
             <h2 class="receipt-header">Your order</h2>
             <ul>
                 <!-- Ordered items here -->
             </ul>
             <p class="total-price">Total price <span class="total-number">$14</span></p>
-            <a href="#" class="submit-order">Complete order</a>
+            <a href="#" class="submit-order" id="submit-order">Complete order</a>
         </section>
+
+
     </main>
+
+
+    <section class="modal-form" id="modal-pop">
+        <h2 class="modal-header">Enter card details</h2>
+        <form id="modal-form">
+            <input type="text" placeholder="Enter your name">
+            <input type="text" placeholder="Enter card number">
+            <input type="text" placeholder="Enter CVV">
+            <button type="submit" class="pay-btn">Pay</button>
+        </form>
+    </section>
 
 
 

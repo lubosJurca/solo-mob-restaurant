@@ -173,7 +173,7 @@ header {
 /* -------- Your order--------- */
 
 .order {
-
+    display: none;
     position: absolute;
     top: 789px;
     left: 46px;
@@ -269,4 +269,75 @@ ul {
 
     position: absolute;
     bottom: 0;
+}
+
+.hidden {
+    display: block;
+}
+
+/* -------Modal form------ */
+
+.modal-form {
+    width: 524px;
+    height: 542px;
+    background: white;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 5px;
+    filter: drop-shadow(5.18654px 5.18654px 255.437px rgba(0, 0, 0, 0.5));
+    display: none;
+}
+
+#modal-form {
+    display: flex;
+    flex-direction: column;
+    width: 475px;
+
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+
+
+}
+
+.modal-header {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 31px;
+    text-align: center;
+    margin: 47px;
+}
+
+input {
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 25px;
+    border: 1.3px solid #757575;
+    font-size: 19px;
+    font-weight: 400;
+    color: #757575;
+    border-radius: 4px;
+}
+
+
+.pay-btn {
+    width: 100%;
+    padding: 20px;
+    margin-top: 60px;
+
+    color: white;
+    border: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    font-style: normal;
+    background: #16DB99;
+
+
 }
