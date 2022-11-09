@@ -31,26 +31,31 @@
 
         <section class="order" id="order">
             <h2 class="receipt-header">Your order</h2>
-            <ul>
+            <ul id="list-items">
                 <!-- Ordered items here -->
             </ul>
-            <p class="total-price">Total price <span class="total-number">$14</span></p>
+            <p class="total-price">Total price <span class="total-number" id="total-number">$14</span></p>
             <a href="#" class="submit-order" id="submit-order">Complete order</a>
         </section>
 
-
+        <section id="final-msg">
+            <p id="message">Thanks, James! Your order is on its way!</p>
+        </section>
     </main>
 
 
     <section class="modal-form" id="modal-pop">
         <h2 class="modal-header">Enter card details</h2>
         <form id="modal-form">
-            <input type="text" placeholder="Enter your name">
-            <input type="text" placeholder="Enter card number">
-            <input type="text" placeholder="Enter CVV">
-            <button type="submit" class="pay-btn">Pay</button>
+            <input class="input" id="name-input" name="name" type="text" placeholder="Enter your name" required>
+            <input class="input" id="card-input" type="text" placeholder="Enter 12-digit card number" maxlength="12"
+                required>
+            <input class="input" id="cvv-input" type="text" placeholder="Enter CVV" maxlength="3" required>
+            <button type="submit" class="pay-btn" id="pay-btn">Pay</button>
         </form>
     </section>
+
+
 
 
 
@@ -59,7 +64,3 @@
 </body>
 
 </html>
-
-
-<!-- <li class="order-item">Pizza <a href="#" class="remove">remove</a> <span class="order-price">$14</span>
-</li> -->

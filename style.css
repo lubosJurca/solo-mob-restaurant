@@ -13,15 +13,17 @@
 
 
 body {
-    background: #F5F5F5;
+    background: white;
+    height: auto;
 }
 
 .wrapper {
     position: relative;
     width: 600px;
-    height: 1161px;
-    background: #FFFFFF;
+    /* height: 100vh; */
+
     margin: 0 auto;
+
 }
 
 /* ----- Header-------- */
@@ -64,6 +66,7 @@ header {
     width: 508px;
     height: 140px;
     border-bottom: 1px solid #D2D2D2;
+    background: rgb(255, 255, 255);
 
 
 
@@ -177,6 +180,7 @@ header {
     position: absolute;
     top: 789px;
     left: 46px;
+    background: white;
 
     width: 508px;
     min-height: 319px;
@@ -196,6 +200,7 @@ header {
 ul {
     list-style-type: none;
     width: 508px;
+    background: white;
 }
 
 .order-item {
@@ -205,7 +210,7 @@ ul {
     font-family: 'Smythe', cursive;
     font-weight: 400;
     font-size: 28px;
-    margin-bottom: 22px;
+    /* margin-bottom: 22px; */
 
 
 }
@@ -241,6 +246,7 @@ ul {
     font-size: 28px;
     color: #0E0E0E;
     padding-top: 14px;
+    margin-bottom: 3.5rem;
 }
 
 .total-number {
@@ -266,6 +272,7 @@ ul {
     padding: 15px;
     box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
     border-radius: 3px;
+    margin-top: 2rem;
 
     position: absolute;
     bottom: 0;
@@ -333,11 +340,43 @@ input {
 
     color: white;
     border: none;
+    border-radius: 5px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 16px;
     font-weight: 700;
     font-style: normal;
     background: #16DB99;
+
+
+}
+
+.pay-btn:hover {
+    cursor: pointer;
+}
+
+#final-msg {
+    background: #ECFDF5;
+    border-radius: 3px;
+    color: #065F46;
+    width: 504px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 30px;
+
+    position: absolute;
+    top: 789px;
+    left: 50px;
+
+
+
+    font-family: 'Smythe', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+
+    display: none;
+
+
 
 
 }
